@@ -162,7 +162,7 @@ Francesca Malandrone
 Lucy Roellecke  
 
 ## License
-MIT
+[BSD-3](https://github.com/afourcade/AffectTracker#BSD-3-Clause-1-ov-file)
 
 ## Project status
 Development has slowed down for the moment.
