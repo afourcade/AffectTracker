@@ -50,7 +50,7 @@ The last two features control the degree of regularity in the oscillations of th
 Each feature needs a minimum and a maximum value as inputs. These correspond to extrema of the mapped coordinates (e.g., when a feature is mapped to the x-axis, `min` corresponds to the left-most side of the grid, while `max` corresponds to the right. Similarly, when mapped to the y-axis, `min` refers to the bottom and `max` to the top).
 
 ## Installation
-Download the latest **AffectTracker.unitypackage** file from the [Releases](https://github.com/user/repo/releases) section.
+Download the latest **AffectTracker.unitypackage** file from the [Releases](https://github.com/afourcade/AffectTracker/releases) section.
 
 In your Unity project, go to `Assets` > `Import Package` > `Custom Package...` and select the **AffectTracker.unitypackage** file. This will open the Import Unity Package window. Make sure everything is selected, then click Import.
 
