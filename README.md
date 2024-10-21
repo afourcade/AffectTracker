@@ -1,11 +1,11 @@
-# ![AffectLogo](AffectTracker/Assets/AffectTracker/Assets/Resources/AffectLogo.png){: width="2%"} AffectTracker
+# <img src="AffectTracker/Assets/AffectTracker/Assets/Resources/AffectLogo.png" width="35"> AffectTracker
 ## Real-time continuous rating of affective experience in immersive Virtual Reality
 
 The **AffectTracker** is a tool which allows users to continuously track and record moment-by-moment ratings of valence and arousal (i.e., pleasantness and intensity of feelings) in Unity.
 
 With the help of an VR input device, users indicate their affective state by positioning a cursor in the valence-arousal space of the affect grid and receive customizable real-time visual feedback.
 
-![Feedbacks](/images/feedbacks.png "AffectTracker"){: width="50%"}
+<img src="/images/feedbacks.png" width="500">
 
 ## Description
 
@@ -20,14 +20,14 @@ The tool includes several customization options for researchers:
 
 The **AffectTracker** offers several visual feedback options which can be switched on and off independently: 
 
-![Flubber Grid](/images/Grid_Flubber.gif "flubber grid")
+<img src="/images/Grid_Flubber.gif" width="500">
 
 #### Grid: 
 Visualize valence-arousal space with a simplified version of the affect grid: see the four quadrants, a round cursor, and no text. 
 #### Flubber: 
 Visualize an abstract shape, called “Flubber”, whose low-level visual features are mapped onto the dimensions of the affect grid.
 
-![Flubber](/images/flubber.png "Flubber"){: width="25%"}
+<img src="/images/flubber.png" width="300">
  
 The “Flubber” consists of three parts, which can be toggled on and off independently: the **base**, **outline**, and **halo**.
 
@@ -62,7 +62,8 @@ The project contains three Demo scenes with the **AffectTracker** (found in the 
 
 To add the **AffectTracker** to a scene, its **prefab** should be placed under the **Main Camera** in the Hierarchy as in screenshot below:
 
-![Hierarchy](/images/hierarchy.png){: width="50%"}
+<img src="/images/hierarchy.png" width="500">
+
 ### Inspector
 The **AffectTracker** can be customized directly in the Inspector. The following sections explain the parts which can be found there.
 
@@ -71,8 +72,7 @@ The position of the visual feedback in the environment can be set with the **Pos
 
 > *Note: The default Position (x = 0, y = -0.4, z = 1.5, units: m) is center-bottom of the visual field.*
 
-![Transform](/images/transform.png){: width="50%"}
-
+<img src="/images/transform.png" width="500">
 
 #### Visual Feedback
 > *Settings for the visual feedback of the tool during rating*
@@ -90,12 +90,12 @@ The **Scaling** slider controls the size of the Grid/Flubber.
   
 > *Note: If a uniform color is wanted for the Flubber Base, the Gradient should be set to a single solid color.*
 
-![Visual Feedback](/images/visual_feedback.png){: width="50%"}
+<img src="/images/visual_feedback.png" width="500">
 
 #### Input Simulator
 > *Simulate input from a VR controller for testing*
   
-![Input Simulator](/images/input_simulator.png){: width="50%"}
+<img src="/images/input_simulator.png" width="500">
 
 #### Input Reader
 > *Settings for the VR controller used for the ratings*
@@ -104,7 +104,7 @@ The **Scaling** slider controls the size of the Grid/Flubber.
   
 > *Note: **Advanced settings** should only be changed if you know what you are doing* 🙂
 
-![Input Reader](/images/input_reader.png){: width="50%"}
+<img src="/images/input_reader.png" width="500">
 
 #### Rating Logger
 > *Settings for how ratings are recorded*
@@ -124,7 +124,7 @@ The **Scaling** slider controls the size of the Grid/Flubber.
 
 > *Note: SR will be held in buffer memory.*
 
-![Rating Logger](/images/rating_logger.png){: width="50%"}
+<img src="/images/rating_logger.png" width="500">
 
 #### Affect Mapping
 > *Settings to map the cartesian/polar coordinates of the affect grid to low-level visual features of the Flubber*
@@ -135,7 +135,7 @@ If you do not want to use one of the mapping, simply remove the feature from the
 
 > *Note: If you are using the Color mapping, set the Base gradient in Visual Feedback as wished. Please not that the gradient shouls have the same min and max values to avoid discontinuity when switching between 0 and 360.*
 
-![Affect Mapping](/images/affect_mapping.png){: width="50%"}
+<img src="/images/affect_mapping.png" width="500">
 
 #### Controller Haptics
 > *Settings to enable/disable vibrations of the VR controller. Can be used to remind the user to rate continuously (e.g., when there is no visual feedback)*
@@ -143,7 +143,7 @@ If you do not want to use one of the mapping, simply remove the feature from the
 **Use Haptics** enable/disable vibrations.  
 A pulse is sent every **Haptic Interval** (in seconds), with a duration of **Pulse Duration** (in seconds) and an intensity of **Pulse Strength** (a value between 0 and 1).   
 
-![Use Haptics](/images/use_haptics.png){: width="50%"}
+<img src="/images/use_haptics.png" width="500">
 
 ## Support
 If you encounter any trouble using the prefab, feel free to contact Antonin Fourcade (antonin.fourcade@maxplanckschools.de) for support.
