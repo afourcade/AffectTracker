@@ -1,6 +1,6 @@
 # <img src="AffectTracker/Assets/AffectTracker/Assets/Resources/AffectLogo.png" width="35"> AffectTracker
 
-Fourcade, A., Malandrone, F., Roellecke, L., Ciston, A., de Mooij, J., Villringer, A., … Gaebler, M. (2024, December 16). AffectTracker: Real-time continuous rating of affective experience in immersive Virtual Reality. [PsyArXiv preprint](https://doi.org/10.31234/osf.io/xemwb)
+Fourcade, A., Malandrone, F., Roellecke, L., Ciston, A., de Mooij, J., Villringer, A., Carletto S., Gaebler, M. (2024, December 16). AffectTracker: Real-time continuous rating of affective experience in immersive Virtual Reality. [PsyArXiv preprint](https://doi.org/10.31234/osf.io/xemwb)
 
 ## Real-time continuous rating of affective experience in immersive Virtual Reality
 
