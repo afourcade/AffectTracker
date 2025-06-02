@@ -160,7 +160,7 @@ If you want to contribute or have any suggestions, please send an e-mail to anto
 ## Authors and acknowledgment
 Antonin Fourcade  
 Francesca Malandrone  
-Jeroen de Mooij (XR Developer)  
+[Jeroen de Mooij](https://github.com/thefirstfloor) (XR Developer)  
 Anthony Ciston    
 Lucy Roellecke  
 Sara Carletto  
