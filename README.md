@@ -6,27 +6,42 @@ Fourcade, A., Malandrone, F., Roellecke, L., Ciston, A., de Mooij, J., Villringe
 
 The **AffectTracker** is a tool which allows users to continuously track and record moment-by-moment ratings of valence and arousal (i.e., pleasantness and intensity of feelings) in Unity.
 
-With the help of an VR input device, users indicate their affective state by positioning a cursor in the valence-arousal space of the affect grid and receive customizable real-time visual feedback.
+With the help of a the input device of a VR controller, users indicate moment-by-moment their affective state by moving a cursor in the valence-arousal space of a affect grid and receive customizable real-time visual feedback.
 
 <img src="/images/feedbacks.png" width="500">
 
 ## Description
 
-The **AffectTracker** has been developed with Unity 2022.3.12 under OpenXR ([khronos.org/openxr/](https://www.khronos.org/openxr/)) and it is designed to work with the touchpad or joystick of a VR controller of any VR equipment supported by OpenXR.
+The **AffectTracker** has been developed with Unity 2022.3.12 under OpenXR ([khronos.org/openxr/](https://www.khronos.org/openxr/)) and it is designed to be easy to implement and work with the touchpad or joystick of a VR controller of any VR equipment supported by OpenXR.
+
+Real-time visual feedback is provided and  can be customized. Researchers and developers using Unity can flexibly integrate this tool with a variety of stimuli, such as images, music, 2D videos, 360° videos, and VR environments, as well as different display types, including VR HMD and 2D screens.
 
 The tool includes several customization options for researchers:
 - visual user feedback (see below)
-- haptic vibrations to remind users to rate continuously
-- adjustable sampling frequency
+- enabling haptic vibrations (e.g., to remind users to rate continuously)
+- configuring the  sampling frequency (up to the refresh rate of the display; e.g., 90 Hz for the HTC Vive Pro)
+- recording either single (“summary”) or continuous ratings
+- configuring the interval for automatically saving ongoing continuous ratings into a file on disk.
+
+Please note that the tool has been developed with the HTC Vive Pro and its touchpad. It is not yet been validated for other VR equipment (e.g., joystick input).
+
+In the case of the round touchpad of the HTC Vive Pro, the possible range for all ratings on both dimensions is [-1 1]: the square affect grid is fitted (i.e., inscribed) into the circle of the touchpad, that is, input values of the round touchpad were restricted (Mathf.Clamp function in Unity). 
+During the continous rating, the participant’s thumb trajectory on the touchpad is recorded at a sampling frequency of your choice. In the case their thumb is off the touchpad (e.g., participants inadvertently stop rating for a short period of time), “NaN” values are recorded.
+
+By rating valence and arousal with a single thumb gesture and providing different feedback options plus optional haptic nudges, the tool can be flexibly customized to the researchers’ and developers’ needs.
+
 
 ### Visual feedback
 
-The **AffectTracker** offers several visual feedback options which can be switched on and off independently: 
+The **AffectTracker** offers several options for the dynamic visual feedback, that can be switched on and off independently: 
 
 <img src="/images/Grid_Flubber.gif" width="500">
 
 #### Grid: 
 Visualize valence-arousal space with a simplified version of the affect grid: see the four quadrants, a round cursor, and no text. 
+
+Note: in case of no rating (thumb off the touchpad), the cursor disappears.
+
 #### Flubber: 
 Visualize an abstract shape, called “Flubber”, whose low-level visual features are mapped onto the dimensions of the affect grid.
 
@@ -48,9 +63,15 @@ Many of the visual features, as well as their mapping onto the cartesian (valenc
 |Projection Time Synchronization|0.8|0|0-1|degree of temporal de-synchronization of all projections (higher values are less synchronized; 0 is perfectly synchronized)|
 |Projection Amplitude Difference|0.8|0|0-1|degree of asymmetry in the amplitudes of all projections (0 is perfectly symmetrical)|
 
-The last two features control the degree of regularity in the oscillations of the Flubber (e.g., from chaotic/irregular to regular).   
+Projection Time Synchronization and Projection Amplitude Difference jointly control the degree of regularity in the oscillations of the Flubber (e.g., from chaotic/irregular to symmetrical/regular).
 
-Each feature needs a minimum and a maximum value as inputs. These correspond to extrema of the mapped coordinates (e.g., when a feature is mapped to the x-axis, `min` corresponds to the left-most side of the grid, while `max` corresponds to the right. Similarly, when mapped to the y-axis, `min` refers to the bottom and `max` to the top).
+Each feature needs a minimum and a maximum value as inputs, which correspond to extrema of the mapped coordinates. For example, when a feature is mapped to the x-axis, min corresponds to the left-most while max corresponds to the right-most side of the grid. Similarly, when mapped to the y-axis, min refers to the bottom and max to the top
+
+For example, in our studies (and in the figures here), the oscillation frequency and the amplitude of the projections were mapped to arousal. The smoothness and regularity (i.e., synchrony and similarity) of the projections were mapped to valence.
+
+Note: in case of no rating (thumb of the touchpad), the Flubber turns into a still disk
+
+A video of an exemplary participant who continuously evaluates their emotional experience using Flubber feedback while watching a 360° VR video is available at: https://doi.org/10.17617/3.QPNSJA.
 
 ## Installation
 Download the latest **AffectTracker.unitypackage** file from the [Releases](https://github.com/afourcade/AffectTracker/releases) section.
