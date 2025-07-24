@@ -16,16 +16,16 @@ The **AffectTracker** has been developed with Unity 2022.3.12 under OpenXR ([khr
 
 Real-time visual feedback is provided and  can be customized. Researchers and developers using Unity can flexibly integrate this tool with a variety of stimuli, such as images, music, 2D videos, 360° videos, and VR environments, as well as different display types, including VR HMD and 2D screens.
 
-The tool includes several customization options for researchers:
+The tool includes several customization options:
 - visual user feedback (see below)
 - enabling haptic vibrations (e.g., to remind users to rate continuously)
 - configuring the  sampling frequency (up to the refresh rate of the display; e.g., 90 Hz for the HTC Vive Pro)
 - recording either single (“summary”) or continuous ratings
 - configuring the interval for automatically saving ongoing continuous ratings into a file on disk.
 
-Please note that the tool has been developed with the HTC Vive Pro and its touchpad. It is not yet been validated for other VR equipment (e.g., joystick input).
+> *Note: the tool has been developed with the HTC Vive Pro and its touchpad. It is not yet been tested for other VR equipment (e.g., joystick input).*
 
-In the case of the round touchpad of the HTC Vive Pro, the possible range for all ratings on both dimensions is [-1 1]: the square affect grid is fitted (i.e., inscribed) into the circle of the touchpad, that is, input values of the round touchpad were restricted (Mathf.Clamp function in Unity). 
+When using the *HTC Vive Pro* and its round touchpad, the possible range for all ratings on both dimensions is [-1 1]: the square affect grid is fitted (i.e., inscribed) into the circle of the touchpad, that is, input values of the round touchpad were restricted (Mathf.Clamp function in Unity). 
 During the continous rating, the participant’s thumb trajectory on the touchpad is recorded at a sampling frequency of your choice. In the case their thumb is off the touchpad (e.g., participants inadvertently stop rating for a short period of time), “NaN” values are recorded.
 
 By rating valence and arousal with a single thumb gesture and providing different feedback options plus optional haptic nudges, the tool can be flexibly customized to the researchers’ and developers’ needs.
@@ -40,7 +40,7 @@ The **AffectTracker** offers several options for the dynamic visual feedback, th
 #### Grid: 
 Visualize valence-arousal space with a simplified version of the affect grid: see the four quadrants, a round cursor, and no text. 
 
-Note: in case of no rating (thumb off the touchpad), the cursor disappears.
+> *Note: in case of no rating (thumb off the touchpad), the cursor disappears.*
 
 #### Flubber: 
 Visualize an abstract shape, called “Flubber”, whose low-level visual features are mapped onto the dimensions of the affect grid.
@@ -69,7 +69,7 @@ Each feature needs a minimum and a maximum value as inputs, which correspond to 
 
 For example, in our studies (and in the figures here), the oscillation frequency and the amplitude of the projections were mapped to arousal. The smoothness and regularity (i.e., synchrony and similarity) of the projections were mapped to valence.
 
-Note: in case of no rating (thumb of the touchpad), the Flubber turns into a still disk
+> *Note: in case of no rating (thumb of the touchpad), the Flubber turns into a still disk*
 
 A video of an exemplary participant who continuously evaluates their emotional experience using Flubber feedback while watching a 360° VR video is available at: https://doi.org/10.17617/3.QPNSJA.
 
