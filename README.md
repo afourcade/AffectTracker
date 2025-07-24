@@ -6,7 +6,7 @@ Fourcade, A., Malandrone, F., Roellecke, L., Ciston, A., de Mooij, J., Villringe
 
 The **AffectTracker** is a tool which allows users to continuously track and record moment-by-moment ratings of valence and arousal (i.e., pleasantness and intensity of feelings) in Unity.
 
-With the help of a the input device of a VR controller, users indicate moment-by-moment their affective state by moving a cursor in the valence-arousal space of a affect grid and receive customizable real-time visual feedback.
+With the help of the input device of a VR controller, users indicate moment-by-moment their affective state by moving a cursor in the valence-arousal space of a affect grid and receive customizable real-time visual feedback.
 
 <img src="/images/feedbacks.png" width="500">
 
