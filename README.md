@@ -23,7 +23,7 @@ The tool includes several customization options:
 - recording either single (“summary”) or continuous ratings
 - configuring the interval for automatically saving ongoing continuous ratings into a file on disk.
 
-> *Note: the tool has been developed with the HTC Vive Pro and its touchpad. It is not yet been tested for other VR equipment (e.g., joystick input).*
+> *Note: the tool has been developed with the HTC Vive Pro and its touchpad. It has not yet been yet tested for other VR equipment (e.g., joystick input).*
 
 When using the *HTC Vive Pro* and its round touchpad, the possible range for all ratings on both dimensions is [-1 1]: the square affect grid is fitted (i.e., inscribed) into the circle of the touchpad, that is, input values of the round touchpad were restricted (Mathf.Clamp function in Unity). 
 During the continous rating, the participant’s thumb trajectory on the touchpad is recorded at a sampling frequency of your choice. In the case their thumb is off the touchpad (e.g., participants inadvertently stop rating for a short period of time), “NaN” values are recorded.
@@ -69,7 +69,7 @@ Each feature needs a minimum and a maximum value as inputs, which correspond to 
 
 For example, in our studies (and in the figures here), the oscillation frequency and the amplitude of the projections were mapped to arousal. The smoothness and regularity (i.e., synchrony and similarity) of the projections were mapped to valence.
 
-> *Note: in case of no rating (thumb of the touchpad), the Flubber turns into a still disk*
+> *Note: in case of no rating (thumb off the touchpad), the Flubber turns into a still disk*
 
 A video of an exemplary participant who continuously evaluates their emotional experience using Flubber feedback while watching a 360° VR video is available at: https://doi.org/10.17617/3.QPNSJA.
 
